@@ -1,0 +1,100 @@
+{
+    "hosts": [
+        {
+            "name": "iproxy-zbej.snapon.com",
+            "thresholds_latency": 200,
+            "thresholds_packet_loss": 10,
+            "recipients": ["tom.wu@snapon.com","jack.guo@snapon.com","clack.huang@snapon.com","sky.peng@snapon.com"],
+            "comment": "Beijing Proxy"
+        },
+        {
+            "name": "10.145.1.1",
+            "thresholds_latency": 200,
+            "thresholds_packet_loss": 10,
+            "recipients": ["tom.wu@snapon.com","jack.guo@snapon.com","clack.huang@snapon.com","sky.peng@snapon.com"],
+            "comment": "Shanghai GateWay"
+        },
+        {
+            "name": "10.145.1.245",
+            "thresholds_latency": 200,
+            "thresholds_packet_loss": 10,
+            "recipients": ["tom.wu@snapon.com","jack.guo@snapon.com","clack.huang@snapon.com","sky.peng@snapon.com"],
+            "comment": "James Printer"
+        },
+        {
+            "name": "10.145.208.1",
+            "thresholds_latency": 200,
+            "thresholds_packet_loss": 10,
+            "recipients": ["tom.wu@snapon.com","jack.guo@snapon.com","clack.huang@snapon.com","sky.peng@snapon.com"],
+            "comment": "Hongkong GateWay"
+        },
+        {
+            "name": "10.145.210.1",
+            "thresholds_latency": 200,
+            "thresholds_packet_loss": 10,
+            "recipients": ["tom.wu@snapon.com","jack.guo@snapon.com","clack.huang@snapon.com","sky.peng@snapon.com"],
+            "comment": "Taiwan GateWay"
+        },
+        {
+            "name": "10.145.207.1",
+            "thresholds_latency": 200,
+            "thresholds_packet_loss": 10,
+            "recipients": ["tom.wu@snapon.com","jack.guo@snapon.com","clack.huang@snapon.com","sky.peng@snapon.com"],
+            "comment": "Korea GateWay"
+        },
+        {
+            "name": "10.145.226.1",
+            "thresholds_latency": 200,
+            "thresholds_packet_loss": 10,
+            "recipients": ["tom.wu@snapon.com","jack.guo@snapon.com","clack.huang@snapon.com","sky.peng@snapon.com"],
+            "comment": "Beijing GateWay"
+        },
+        {
+            "name": "10.145.219.1",
+            "thresholds_latency": 200,
+            "thresholds_packet_loss": 10,
+            "recipients": ["tom.wu@snapon.com","jack.guo@snapon.com","clack.huang@snapon.com","sky.peng@snapon.com"],
+            "comment": "Xiaoshan GateWay"
+        },
+        {
+            "name": "10.145.206.1",
+            "thresholds_latency": 200,
+            "thresholds_packet_loss": 10,
+            "recipients": ["tom.wu@snapon.com","jack.guo@snapon.com","clack.huang@snapon.com","sky.peng@snapon.com","simon.xiong@snapon.com","cherry.cheng@snapon.com","davie.qin@snapon.com","sylvan.shen@snapon.com"],
+            "comment": "Singapore GateWay"
+        },
+        {
+            "name": "email.snapon.com",
+            "thresholds_latency": 250,
+            "thresholds_packet_loss": 10,
+            "recipients": ["tom.wu@snapon.com","jack.guo@snapon.com","clack.huang@snapon.com","sky.peng@snapon.com"],
+            "comment": "US Email"
+        },
+        {
+            "name": "picjobs.snapon.com",
+            "thresholds_latency": 300,
+            "thresholds_packet_loss": 10,
+            "recipients": ["tom.wu@snapon.com","jack.guo@snapon.com","clack.huang@snapon.com","sky.peng@snapon.com","simon.xiong@snapon.com","cherry.cheng@snapon.com","davie.qin@snapon.com","sylvan.shen@snapon.com"],
+            "comment": "US EDI"
+        },
+        {
+            "name": "tkyo-sgdc-01-pp",
+            "thresholds_latency": 100,
+            "thresholds_packet_loss": 10,
+            "recipients": ["tom.wu@snapon.com","jack.guo@snapon.com","clack.huang@snapon.com","sky.peng@snapon.com","simon.xiong@snapon.com","cherry.cheng@snapon.com","davie.qin@snapon.com","sylvan.shen@snapon.com"],
+            "comment": "Japan DC"
+        }
+    ],
+    "source": "Kunshan",
+    "number_to_ping": 5,
+    "time_to_sleep": 2,
+    "upload_to_influxDB": true,
+    "remind_period": 1800, 
+    "need_send_email": true,
+    "smtp_server":"service.snapon.com",
+    "sender_email":"MonitorAsiaIT@snapon.com",
+    "influxdb_server":"10.145.204.47",
+    "db_name":"snapon",
+    "influxdb_port":8086
+}
+
